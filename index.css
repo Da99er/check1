@@ -26,3 +26,4 @@ git push  /* push if we have -u */
 git log  /* information about our steps */
 git branch  /* show your line  */
 git branch -la  /* show all lines  */
+push.all_right;
