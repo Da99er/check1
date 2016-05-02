@@ -17,14 +17,18 @@ git commit -m "my comment" /* save this work progress local */
 work with github.com
 folder must be equal on local and github side
  */
-git remote add origin https://github.com/Da99er/site.git  /* link to github.com directory */
-git remote rm origin /* remove wrong github.com directory (then must: remote add origin http:// )  */
-git push -u origin master   /* push to github server and save "-u"  from->to   */
+git remote add somename https://github.com/Da99er/site.git  /* link to github.com directory */
+git remote rm somename /* remove wrong github.com directory (then must: remote add somename http:// )  */
+git push -u somename master   /* push to github server and save "-u"  from->to   */
 git push  /* push if we have -u */
 
 /* inforamation */
 git log  /* information about our steps */
 git branch  /* show your line  */
 git branch -la  /* show all lines  */
-push.all_right;
-Add Repositorie for all;
+
+/*how to download changes from server*/
+git remote -v /* list of all remotes */
+git remote add somename https://github.com/Da99er/site.git /* now link have little name */
+git fetch somename /* we can add --force */
+git merge somename/master   /* we mergin all branch*/
