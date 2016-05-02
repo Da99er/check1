@@ -1,0 +1,28 @@
+/* config */
+git config --global user.mail "Da99er87@ya.ru" /* add config email */
+git config --global user.name "Da99er" /* add config user name */
+git config --list /* all config parametr list */
+/* config */
+
+/* work on local machine */
+git init /* start work, create git folder */
+git status /* status of all element, check changes  */
+git add somefile.txt /* add all files to work list */
+git add .   /* <-will add all files */
+git rm -fr somefile.txt  /* remove some file or folder*/
+git commit -m "my comment" /* save this work progress local */
+/* work on local machine */
+
+/* 
+work with github.com
+folder must be equal on local and github side
+ */
+git remote add origin https://github.com/Da99er/site.git  /* link to github.com directory */
+git remote rm origin /* remove wrong github.com directory (then must: remote add origin http:// )  */
+git push -u origin master   /* push to github server and save "-u"  from->to   */
+git push  /* push if we have -u */
+
+/* inforamation */
+git log  /* information about our steps */
+git branch  /* show your line  */
+git branch -la  /* show all lines  */
