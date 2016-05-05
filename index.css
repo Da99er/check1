@@ -28,7 +28,10 @@ git branch  /* show your line  */
 git branch -la  /* show all lines  */
 git diff /* show difference  width new changes*/
 git show HEAD /* display everything the git command git log,plus the file changes */
-git checkout HEAD somefile.txt /* will restore the file in your working directory to look exactly as it did when you last made a commit */
+git checkout HEAD somefile.txt /* Discards changes in the work directory will restore the file in your working directory to look exactly as it did when you last made a commit */
+git reset HEAD somefile.txt /*Unstage file changes in the staging area. remove all changes from history and working directory */
+M somefile.txt /* M -short modificate */
+git reset 1234567 /* can be used to reset to a previous commit in your commit history. go to previous commit */
 /*how to download changes from server*/
 git remote -v /* list of all remotes */
 git remote add somename https://github.com/Da99er/site.git /* now link have little name */
