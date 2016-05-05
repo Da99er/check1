@@ -26,7 +26,9 @@ git push  /* push if we have -u */
 git log  /* information about our steps */
 git branch  /* show your line  */
 git branch -la  /* show all lines  */
-
+git diff /* show difference  width new changes*/
+git show HEAD /* display everything the git command git log,plus the file changes */
+git checkout HEAD somefile.txt /* will restore the file in your working directory to look exactly as it did when you last made a commit */
 /*how to download changes from server*/
 git remote -v /* list of all remotes */
 git remote add somename https://github.com/Da99er/site.git /* now link have little name */
