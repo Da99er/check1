@@ -1,3 +1,3 @@
-# webpack scss babel config
+# github help
 
-webpack config with separete scss babel
+git help 
