@@ -36,9 +36,13 @@ git reset 1234567 /* can be used to reset to a previous commit in your commit hi
 git remote -v /* list of all remotes */
 git remote add somename https://github.com/Da99er/site.git /* now link have little name */
 git fetch somename /* we can add --force */
-git merge somename/master   /* we mergin all branch */
+git merge somename/master   /* we mergin two branch */
 
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" /* Creates a new ssh key, using the provided email as a label */
 
-/* work with branch */
-git branch /* show current branch*/
+/* work with branches */
+git branch /* list all a git project's branches */
+git branch mynewbranch /* create new branch */
+git checkout mynewbranch /* switch to another git branch */
+git merge mynewbranch /* used to join file changes from one branch to another */
+git branch -d mynewbranch /* will delete this branch */
