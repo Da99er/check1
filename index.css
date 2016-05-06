@@ -39,3 +39,6 @@ git fetch somename /* we can add --force */
 git merge somename/master   /* we mergin all branch */
 
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" /* Creates a new ssh key, using the provided email as a label */
+
+/* work with branch */
+git branch /* show current branch*/
