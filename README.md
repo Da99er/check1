@@ -1,3 +1,3 @@
-# check1
-test folder
-some read me
+# webpack scss babel config
+
+webpack config with separete scss babel
