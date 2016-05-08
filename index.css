@@ -35,7 +35,7 @@ git reset 1234567 /* can be used to reset to a previous commit in your commit hi
 
 
 /*how to download folder from server*/
-git clone url/* copy folder from server */
+git clone https://url/* copy folder from server */
 
 /*how to download changes from server*/
 git remote -v /* list of all remotes */
