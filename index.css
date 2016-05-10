@@ -43,6 +43,11 @@ git remote add somename https://github.com/Da99er/site.git /* now link have litt
 git fetch somename /* we can add --force */
 git merge somename/master   /* we mergin two branch */
 
+/* force pull */
+git fetch --all 
+git reset --hard somename/master /* usually origin master*/
+git pull somename master /* usually origin master*/
+
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" /* Creates a new ssh key, using the provided email as a label */
 
 /* work with branches */
