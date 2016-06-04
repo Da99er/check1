@@ -5,14 +5,18 @@ npm i -g bower     /* install bower (if need)*/
 
 ember install ember-localstorage-adapter /* install local storage adapter (if need) */
 
-ember g adapter some-name /* create adapter in project  */
+ember g adapter application /* create adapter in project  */
 /*if localstorage adapter    app/adapters/application.js*/
+/*import JSONAPIAdapter from 'ember-data/adapters/json-api';
+export default JSONAPIAdapter.extend({
+	host:'localhost:3000'
+});*/
 import LSAdapter from 'ember-localstorage-adapter/adapters/ls-adapter';
 export default LSAdapter.extend({
-  namespace: 'my app'
+  namespace: 'myApp'
 });
 
-ember g serializer some-name /* create serializer in project  */
+ember g serializer application /* create serializer in project  */
 /*if localstorage serializer app/serializers/application.js */
 import { LSSerializer } from 'ember-localstorage-adapter';
 export default LSSerializer.extend();
@@ -28,7 +32,7 @@ export default Ember.Route.extend({
   }
 });
 
-/* ember g controller cash */
+/* ember g controller myroute[CONTROLLER NAME] */
 export default Ember.Controller.extend({
   actions: {
     toggleBody() {
@@ -57,6 +61,9 @@ export default Model.extend({
   parent: belongsTo('folder', { inverse: 'children' })
 });
 
-/* */
-/* */
+ember g component dash-in-name /* create component, need dash "-" in name */
+ember g service dash-in-name-or-not /* create service for use common variables and functions */
+ember g helper dash-in-name /* reorganisation final value */
+
+
 
