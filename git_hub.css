@@ -1,6 +1,6 @@
 /* config */
-git config --global user.mail "Da99er87@ya.ru" /* add config email */
-git config --global user.name "Da99er" /* add config user name */
+git config --global user.mail "email@example.ru" /* add config email */
+git config --global user.name "somename" /* add config user name */
 git config --list /* all config parametr list */
 /* config */
 
