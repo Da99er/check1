@@ -24,6 +24,7 @@ git push  /* push if we have -u */
 
 /* inforamation */
 git log  /* information about our steps */
+git log -p -2  /* -p, which shows the difference introduced in each commit. 2, which limits the output to only the last two entries */
 git branch  /* show your line  */
 git branch -la  /* show all lines  */
 git diff /* show difference  width new changes*/
