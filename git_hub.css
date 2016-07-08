@@ -57,3 +57,4 @@ git branch mynewbranch /* create new branch */
 git checkout mynewbranch /* switch to another git branch */
 git merge mynewbranch /* used to join file changes from one branch to another */
 git branch -d mynewbranch /* will delete this branch */
+git checkout anotherbranchname -> git merge master/* merge the master branch into the feature (anotherbranchname) branch */
