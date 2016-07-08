@@ -58,3 +58,17 @@ git checkout mynewbranch /* switch to another git branch */
 git merge mynewbranch /* used to join file changes from one branch to another */
 git branch -d mynewbranch /* will delete this branch */
 git checkout anotherbranchname -> git merge master/* merge the master branch into the feature (anotherbranchname) branch */
+/* rename branches */
+git branch -m old_branch_name new_branch_name /* rename branch */
+git push origin new_branch_name:master /* push new name of branch */
+
+/* tags */
+git update-ref refs/tags/v1.0 cac0cab538b970a37ea1e769cbbde608743bc96d /* create or update tag */
+git push origin v1.0 /* push tag to server */ 
+/* rename and push tags */
+git tag newname_tag oldname_tag
+git tag -d oldname_tag
+git push origin :refs/tags/oldname_tag
+/* load tag */
+git checkout newname_tag
+git pull origin master(some)
