@@ -48,6 +48,8 @@ git merge somename/master   /* we mergin two branch */
 git fetch --all 
 git reset --hard somename/master /* usually origin master*/
 git pull somename master /* usually origin master*/
+/*restore deleted localy file no commited */
+git checkout HEAD <path>
 
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" /* Creates a new ssh key, using the provided email as a label */
 
@@ -69,6 +71,8 @@ git push origin v1.0 /* push tag to server */
 git tag newname_tag oldname_tag
 git tag -d oldname_tag
 git push origin :refs/tags/oldname_tag
+
 /* load tag */
 git checkout newname_tag
 git pull origin master(some)
+git push origin aet_test -f /* update tag */
