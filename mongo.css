@@ -12,4 +12,11 @@ db.dropDataBase(); /* base will be removed */
 db.createCollection('users');
 show collections /* show all collections */
 
-db.dropDatabase(); /* delete this delete */
+db.users.find() /* search in user model */
+db.users.findOne() /* search once in user model */
+db.users.findOne().pretty() /* pretify answer */
+
+db.users.insert({
+	name:"SomeName",
+	age:22
+});
