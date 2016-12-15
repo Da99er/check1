@@ -33,6 +33,8 @@ git checkout HEAD somefile.txt /* Discards changes in the work directory will re
 git reset HEAD somefile.txt /*Unstage file changes in the staging area. remove all changes from history and working directory */
 M somefile.txt /* M -short modificate */
 git reset 1234567 /* can be used to reset to a previous commit in your commit history. go to previous commit */
+git ls-files /* show all files except ignored */
+
 
 
 /*how to download folder from server*/
