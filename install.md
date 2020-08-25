@@ -38,6 +38,7 @@ https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-di
 # sendmail
 
 `sudo apt-get install sendmail;`
+`sudo sendmailconfig;`
 
 # chmod
 
