@@ -3,8 +3,8 @@
 
 https://github.com/cryptofuture/nginx-hda-bundle
 
-`sudo apt-add-repository ppa:hda-me/nginx-stable
-sudo apt-get update`
+`sudo apt-add-repository ppa:hda-me/nginx-stable;
+sudo apt-get update;`
 
 `sudo apt-get install nginx nginx-dbg nginx-module-brotli nginx-module-cache-purge nginx-module-ct nginx-module-devel-kit nginx-module-fancyindex nginx-module-geoip nginx-module-geoip2 nginx-module-graphite nginx-module-http-auth-pam nginx-module-http-echo nginx-module-http-headers-more nginx-module-http-subs-filter nginx-module-image-filter nginx-module-lenght-hiding-filter nginx-module-lua nginx-module-mail nginx-module-naxsi nginx-module-nchan nginx-module-njs nginx-module-pagespeed nginx-module-perl nginx-module-rds-json nginx-module-rtmp nginx-module-session-binding-proxy nginx-module-stream nginx-module-stream-sts nginx-module-sts nginx-module-testcookie nginx-module-ts nginx-module-upload-progress nginx-module-upstream-fair nginx-module-upstream-order nginx-module-vts nginx-module-xslt nginx-module-http-proxy-connect;`
 
