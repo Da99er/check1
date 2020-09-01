@@ -1,32 +1,39 @@
-/* config */
+## config
 
+```sh
 git config user.email "Da99er87@ya.ru" \
 && git config  user.name "Da99er" \ 
+```
+## config examle
+```sh
+git config --global user.mail "email@example.ru" # add config email
+git config --global user.name "somename" # add config user name
+git config --list # all config parametr list
+```
 
-git config --global user.mail "email@example.ru" /* add config email */
-git config --global user.name "somename" /* add config user name */
-git config --list /* all config parametr list */
-/* config */
+## work on local machine
+```sh
+git init # start work, create git folder
+git status # status of all element, check changes
+git add somefile.txt # add all files to work list
+git add . # <-will add all files
+git rm -fr somefile.txt  # remove some file or folder
+git commit -m "my comment" # save this work progress local
+```
 
-/* work on local machine */
-git init /* start work, create git folder */
-git status /* status of all element, check changes  */
-git add somefile.txt /* add all files to work list */
-git add .   /* <-will add all files */
-git rm -fr somefile.txt  /* remove some file or folder*/
-git commit -m "my comment" /* save this work progress local */
-/* work on local machine */
-
-/* 
 work with github.com
 folder must be equal on local and github side
- */
-git remote add somename https://github.com/Da99er/site.git  /* link to github.com directory */
-git remote rm somename /* remove wrong github.com directory (then must: remote add somename http:// )  */
-git push -u somename master   /* push to github server and save "-u"  from->to   */
-git push  /* push if we have -u */
+```sh
+git remote add somename https://github.com/Da99er/site.git  # link to github.com directory
+git remote rm somename # remove wrong github.com directory (then must: remote add somename http:// )
+```
 
-/* inforamation */
+```sh
+git push -u somename master   # push to github server and save "-u"  from->to
+git push  # push if we have -u
+```
+
+## inforamation
 git log  /* information about our steps */
 git log -p -2  /* -p, which shows the difference introduced in each commit. 2, which limits the output to only the last two entries */
 git branch  /* show your line  */
