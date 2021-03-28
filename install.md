@@ -49,3 +49,8 @@ https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-di
 `sudo chown www-data:www-data -R ./uploads-webpc;`
 `sudo chmod -R 755 ./uploads;`
 `sudo chmod -R 755 ./uploads-webpc;`
+
+# qgit
+
+`sudo apt-get update -y;`
+`sudo apt-get install -y qgit;`
