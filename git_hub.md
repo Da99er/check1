@@ -32,9 +32,8 @@ git remote rm somename # remove wrong github.com directory (then must: remote ad
 git push -u somename master   # push to github server and save "-u"  from->to
 git push  # push if we have -u
 ```
-
-```sh
 ## inforamation
+```sh
 git log  # information about our steps
 git log -p -2  # -p, which shows the difference introduced in each commit. 2, which limits the output to only the last two entries
 git branch  # show your line 
@@ -48,44 +47,44 @@ git reset 1234567 # can be used to reset to a previous commit in your commit his
 git ls-files # show all files except ignored
 ```
 
-```sh
 ## how to download folder from server
+```sh
 git clone https://some-url   # copy folder from server
 ```
 
-```sh
 ## how to download changes from server
+```sh
 git remote -v # list of all remotes
 git remote add somename https://github.com/Da99er/site.git # now link have little name
 git fetch somename # we can add --force
 git merge somename/master   # we mergin two branch
 ```
 
-```sh
 ## remove all changes
+```sh
 git stash
 ```
 
-```sh
 ## pull if push blocks by remote commits
+```sh
 git pull --rebase
 ```
 
-```sh
 ## force pull
+```sh
 git fetch --all 
 git reset --hard somename/master # usually origin master
 git pull somename master # usually origin master
 ```
 
-```sh
 ## restore deleted localy file no commited
+```sh
 git checkout HEAD <path>
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Creates a new ssh key, using the provided email as a label
 ```
 
-```sh
 ## work with branches 
+```sh
 git branch # list all a git project's branches 
 git branch mynewbranch # create new branch 
 git checkout mynewbranch # switch to another git branch 
@@ -94,27 +93,27 @@ git branch -d mynewbranch # will delete this branch
 git checkout anotherbranchname -> git merge master # merge the master branch into the feature (anotherbranchname) branch 
 ```
 
-```sh
 ## rename branches 
+```sh
 git branch -m old_branch_name new_branch_name # rename branch 
 git push origin new_branch_name:master # push new name of branch 
 ```
 
-```sh
 ## tags 
+```sh
 git update-ref refs/tags/v1.0 cac0cab538b970a37ea1e769cbbde608743bc96d # create or update tag 
 git push origin v1.0 # push tag to server  
 ```
 
-```sh
 ## rename and push tags 
+```sh
 git tag newname_tag oldname_tag
 git tag -d oldname_tag
 git push origin :refs/tags/oldname_tag
 ```
 
-```sh
 ## load tag 
+```sh
 git checkout newname_tag
 git pull origin master(some)
 git push origin aet_test -f # update tag 
