@@ -77,6 +77,11 @@ git reset --hard somename/master # usually origin master
 git pull somename master # usually origin master
 ```
 
+## delete remote branch
+```sh
+git push origin --delete origin/somebranch
+```
+
 ## restore deleted localy file no commited
 ```sh
 git checkout HEAD <path>
